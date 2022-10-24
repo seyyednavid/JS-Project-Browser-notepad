@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary_color: #023047;
+  --secondary_color: #93cb52;
+  --text_color: #333;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+/* utilities */
+.btn {
+  display: inline-block;
+  color: var(--primary_color);
+  background: var(--secondary_color);
+  padding: 0.5rem 0.2rem;
+  border: none;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #90a955;
+}
+
+#content {
+  background: var(--primary_color) url(../img/pic1.jpg) no-repeat center
+    center/cover;
+  color: var(--text_color);
+  height: 100vh;
+}
+
+#content #container {
+  padding: 4rem 2rem;
+}
+
+/* header section*/
+#header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#header p {
+  margin-top: 1rem;
+}
+#header span {
+  color: var(--primary_color);
+}
+
+/*  row section */
+#row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  height: 60vh;
+  padding: 1rem;
+}
+#row .six-columns {
+  flex: 1;
+  margin: 0.5rem;
+}
+#row #form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#row #form .label {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#row .add-note #note-list {
+  background: var(--primary_color) url(../img/pic2.jpg) no-repeat center
+    center/cover;
+  margin-top: 1rem;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*  remove button in js */
+.r-btn,
+r-btn:hover {
+  color: red;
+  cursor: pointer;
+  float: right;
+  padding: 0rem 0.5rem;
+  font-size: 18px;
+  font-weight: bold;
+}

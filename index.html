@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f479181915.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="./css/mobile.css"
+    />
+    <title>Browser's Notebook With Local Storage</title>
+  </head>
+
+  <body>
+    <div id="content">
+      <div id="container">
+        <div id="header">
+          <h1 id="head">
+            <i class="fa-regular fa-clipboard"></i><span> Notebook</span>
+          </h1>
+          <p>
+            Please use this Browser's Notebook With Local Storage and Enjoy it.
+          </p>
+          <h2>----------------------------</h2>
+        </div>
+
+        <div id="row">
+          <div class="six-columns">
+            <form id="form">
+              <label for="MNotes" class="label"> Add New Notes:</label>
+              <textarea name="" id="MNotes" cols="30" rows="10"></textarea>
+              <input type="submit" value="Save Note" class="btn" />
+            </form>
+          </div>
+
+          <div class="six-columns add-note">
+            <h2>My Notes</h2>
+            <div id="note-list"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
