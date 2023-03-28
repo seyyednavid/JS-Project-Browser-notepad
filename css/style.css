@@ -7,7 +7,7 @@
 }
 :root {
   --primary_color: #023047;
-  --secondary_color: #93cb52;
+  --secondary_color: #e63946;
   --text_color: #333;
 }
 
@@ -24,6 +24,7 @@ body {
   border: none;
   border-radius: 5px;
   margin: 0.5rem 0;
+  font-size: 20px;
 }
 .btn:hover {
   cursor: pointer;
@@ -77,19 +78,27 @@ body {
   font-weight: bold;
   font-size: 20px;
 }
+#row textarea {
+  font-size: 20px;
+  margin-top: 1rem;
+  letter-spacing: 1px;
+  padding: 15px;
+}
 
 #row .add-note #note-list {
-  background: var(--primary_color) url(../img/pic2.jpg) no-repeat center
-    center/cover;
+  /* background: var(--primary_color) url(../img/pic2.jpg) no-repeat center
+    center/cover; */
   margin-top: 1rem;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
+  line-height: 30px;
+  list-style-type: none;
 }
 
 /*  remove button in js */
 .r-btn,
 r-btn:hover {
-  color: red;
+  color: #e63946;
   cursor: pointer;
   float: right;
   padding: 0rem 0.5rem;
